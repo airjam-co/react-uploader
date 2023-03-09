@@ -1,5 +1,5 @@
 {
-  "name": "react-table-view",
+  "name": "@airjam/react-table-view",
   "version": "1.0.0",
   "main": "build/index.js",
   "module": "build/index.esm.js",
