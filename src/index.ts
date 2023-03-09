@@ -1,3 +1,3 @@
-import TestComponent from "./TestComponent";
+import TableView from "./TableView";
 
-export { TestComponent };
+export { TableView };

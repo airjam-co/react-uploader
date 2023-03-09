@@ -1,5 +1,5 @@
 {
-  "name": "react-component-library",
+  "name": "react-table-view",
   "version": "1.0.0",
   "main": "build/index.js",
   "module": "build/index.esm.js",
@@ -7,7 +7,7 @@
     "build"
   ],
   "types": "build/index.d.ts",
-  "description": "A skeleton to create your own React component library using Rollup, TypeScript, Sass and Storybook",
+  "description": "React component for AirJam's TableView component",
   "scripts": {
     "build": "rollup -c",
     "test": "jest",
@@ -19,10 +19,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HarveyD/react-component-library.git"
+    "url": "git+https://github.com/airjam-co/react-table-view.git"
   },
   "keywords": [
     "React",
+    "AirJam",
+    "TableView",
     "Component",
     "Library",
     "Rollup",
@@ -33,9 +35,9 @@
   "author": "Harvey Delaney",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/HarveyD/react-component-library/issues"
+    "url": "https://github.com/airjam-co/react-table-view/issues"
   },
-  "homepage": "https://github.com/HarveyD/react-component-library#readme",
+  "homepage": "https://github.com/airjam-co/react-table-view#readme",
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
@@ -55,6 +57,7 @@
     "autoprefixer": "^10.4.13",
     "babel-loader": "^8.2.2",
     "babel-preset-react-app": "^10.0.0",
+    "colors": "^1.4.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.6.3",
     "react": "^16.14.0",
@@ -66,5 +69,14 @@
     "rollup-plugin-typescript2": "^0.29.0",
     "ts-jest": "^26.5.6",
     "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@airjam/types": "^0.0.33",
+    "chart.js": "^2.9.4",
+    "install": "^0.13.0",
+    "npm": "^9.6.0",
+    "react-chartjs-2": "^2.11.1",
+    "semantic-ui-css": "^2.5.0",
+    "semantic-ui-react": "^2.1.4"
   }
 }
