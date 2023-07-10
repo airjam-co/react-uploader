@@ -1,13 +1,13 @@
 {
-  "name": "@airjam/react-table-view",
-  "version": "1.0.0",
+  "name": "@airjam/react-uploader",
+  "version": "0.0.1",
   "main": "build/index.js",
   "module": "build/index.esm.js",
   "files": [
     "build"
   ],
   "types": "build/index.d.ts",
-  "description": "React component for AirJam's TableView component",
+  "description": "React component for AirJam's Uploader component",
   "scripts": {
     "build": "rollup -c",
     "test": "jest",
@@ -19,12 +19,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/airjam-co/react-table-view.git"
+    "url": "git+https://github.com/airjam-co/react-uploader.git"
   },
   "keywords": [
     "React",
     "AirJam",
-    "TableView",
+    "Uploader",
     "Component",
     "Library",
     "Rollup",
@@ -35,9 +35,9 @@
   "author": "Harvey Delaney",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/airjam-co/react-table-view/issues"
+    "url": "https://github.com/airjam-co/react-uploader/issues"
   },
-  "homepage": "https://github.com/airjam-co/react-table-view#readme",
+  "homepage": "https://github.com/airjam-co/react-uploader#readme",
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
@@ -54,7 +54,7 @@
     "@types/jest": "^24.9.1",
     "@types/react": "^16.14.14",
     "@types/react-dom": "^16.9.14",
-    "autoprefixer": "^10.4.13",
+    "autoprefixer": "9",
     "babel-loader": "^8.2.2",
     "babel-preset-react-app": "^10.0.0",
     "colors": "^1.4.0",
@@ -71,11 +71,10 @@
     "typescript": "^4.8.4"
   },
   "dependencies": {
-    "@airjam/types": "^0.0.33",
-    "chart.js": "^2.9.4",
+    "filepond": "^4.30.4",
     "install": "^0.13.0",
     "npm": "^9.6.0",
-    "react-chartjs-2": "^2.11.1",
+    "react-filepond": "^7.1.2",
     "semantic-ui-css": "^2.5.0",
     "semantic-ui-react": "^2.1.4"
   }

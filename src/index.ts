@@ -1,3 +1,3 @@
-import TableView from "./TableView";
+import Uploader from "./Uploader";
 
-export { TableView };
+export { Uploader };
