@@ -19,6 +19,7 @@ interface States {
 export interface UploaderProps {
     id: string;
     authToken?: string;
+    sessionId?: string;
     host?: string;
     name?: string;
     uploaderName?: string;
@@ -85,6 +86,7 @@ export default class Uploader extends React.Component<UploaderProps, States> {
                             ondata: (formData) => {
                                 formData.append('id', this.props.id);
                                 formData.append('authToken', this.props.authToken);
+                                formData.append('sessionId', this.props.sessionId);
                                 formData.append('uploaderName', this.props.uploaderName ? this.props.uploaderName : '');
                                 return formData;
                             }},
@@ -99,6 +101,7 @@ export default class Uploader extends React.Component<UploaderProps, States> {
                                 console.log(formData);
                                 formData.append('id', this.props.id);
                                 formData.append('idToken', this.props.authToken);
+                                formData.append('sessionId', this.props.sessionId);
                                 formData.append('uploaderName', this.props.uploaderName ? this.props.uploaderName : '');
                                 return formData;
                             },
