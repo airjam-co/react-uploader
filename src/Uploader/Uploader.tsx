@@ -69,6 +69,7 @@ export default class Uploader extends React.Component<UploaderProps, States> {
                             method: 'POST',
                             headers: {
                                 'Authorization': this.props.authToken,
+                                'SessionId': this.props.sessionId,
                                 'Access-Control-Allow-Origin': '*',
                             },
                             withCredentials: false,
@@ -95,6 +96,7 @@ export default class Uploader extends React.Component<UploaderProps, States> {
                             method: 'GET',
                             headers: {
                                 'Authorization': this.props.authToken,
+                                'SessionId': this.props.sessionId,
                                 'Access-Control-Allow-Origin': '*',
                             },
                             ondata: (formData) => {
